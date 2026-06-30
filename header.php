@@ -15,7 +15,7 @@
   <div class="wrap head__row">
     <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Padma Global Nusatama — beranda">
       <img class="brand__logo"
-           src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/padma-mark.png' ); ?>"
+           src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/padma-mark-white.png' ); ?>"
            width="55" height="42" alt="" aria-hidden="true" />
       <span><?php bloginfo( 'name' ); ?><small><?php bloginfo( 'description' ); ?></small></span>
     </a>

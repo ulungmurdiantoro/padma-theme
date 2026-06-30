@@ -116,25 +116,21 @@ function padma_structured_data() {
 }
 add_action( 'wp_head', 'padma_structured_data' );
 
-function padma_get_portfolio_images() {
+/**
+ * One representative logo per brand for the portfolio grid.
+ * Returns an array of [ 'logo' => filename, 'name' => display label ].
+ */
+function padma_get_portfolio_brands() {
     return [
-        'LOGO-EXPERTIA-002.png',
-        'LOGO-EXPERTIA-003.png',
-        'LOGO-EXPERTIA-004.png',
-        'LOGO-EXPERTIA-005.png',
-        'LOGO-LABNESIA-001.gif',
-        'LOGO-LABNESIA-002.gif',
-        'LOGO-LABNESIA-003.gif',
-        'LOGO-LABNESIA-004.gif',
-        'LOGO-LABNESIA-005.gif',
-        'LOGO-MUTU-PERGURUAN-TINGGI-002.jpg',
-        'LOGO-MUTU-PERGURUAN-TINGGI-17032025.png',
-        'LOGO-PADMA-BLACK.gif',
-        'LOGO-PADMA-COLOR.gif',
-        'LOGO-PADMA-WHITE.gif',
-        'MUTULULUSAN-LOGO-3.gif',
-        'MUTULULUSAN-LOGO-4.gif',
-        'MUTULULUSAN-LOGO-5.gif',
-        'MUTULULUSAN-LOGO-6.gif',
+        [ 'logo' => 'LOGO-PADMA-WHITE.gif',                   'name' => 'Padma Global Nusatama' ],
+        [ 'logo' => 'LOGO-MUTU-PERGURUAN-TINGGI-17032025.png', 'name' => 'Mutu Perguruan Tinggi' ],
+        [ 'logo' => 'LOGO-LABNESIA-001.gif',                  'name' => 'Labnesia' ],
+        [ 'logo' => 'LOGO-EXPERTIA-002.png',                  'name' => 'Expertia' ],
+        [ 'logo' => 'MUTULULUSAN-LOGO-3.gif',                 'name' => 'Mutu Lulusan' ],
     ];
+}
+
+/** @deprecated Use padma_get_portfolio_brands() instead. */
+function padma_get_portfolio_images() {
+    return array_column( padma_get_portfolio_brands(), 'logo' );
 }

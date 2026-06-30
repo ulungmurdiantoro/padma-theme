@@ -9,7 +9,7 @@
     <div class="hero__intro">
       <span class="eyebrow">PT Padma Global Nusatama &middot; berakar pada implementasi ISO</span>
       <h1 id="hero-h">Satu ekosistem untuk <span class="em">mutu</span>, <span class="em">kompetensi</span>, dan <span class="em-2">akreditasi</span> berstandar internasional.</h1>
-      <p class="hero__lede lede">Kami menaungi dua platform — perguruan tinggi dan laboratorium — yang membantu institusi dan SDM di Indonesia mencapai standar terbaiknya: <strong>terlatih, terdampingi, dan tersertifikasi</strong>.</p>
+      <p class="hero__lede">Kami menaungi dua platform — perguruan tinggi dan laboratorium — yang membantu institusi dan SDM di Indonesia mencapai standar terbaiknya: <strong style="color:#fff;font-weight:600">terlatih, terdampingi, dan tersertifikasi</strong>.</p>
       <div class="hero__cta">
         <a class="btn btn--ink" href="#ekosistem">Lihat dua platform
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -35,26 +35,31 @@
 
     <div class="diagram-wrap" aria-hidden="true">
       <svg class="diagram" viewBox="0 0 520 440" role="img" aria-label="Diagram: Padma Global Nusatama menaungi dua platform">
-        <path class="conn c1" d="M150 220 C 250 200, 300 170, 372 158" fill="none" stroke="#2B5BD0" stroke-width="2.2"/>
-        <path class="conn c2" d="M150 220 C 250 240, 300 270, 372 282" fill="none" stroke="#138A66" stroke-width="2.2"/>
+        <path class="conn c1" d="M150 220 C 250 200, 300 170, 372 158" fill="none" stroke="#4080FF" stroke-width="1.8"/>
+        <path class="conn c2" d="M150 220 C 250 240, 300 270, 372 282" fill="none" stroke="#22C78A" stroke-width="1.8"/>
+        <!-- center node -->
         <g>
-          <circle cx="96" cy="220" r="78" fill="#18152E"/>
-          <circle cx="96" cy="220" r="78" fill="none" stroke="#5C3D86" stroke-width="2"/>
+          <circle cx="96" cy="220" r="78" fill="#161616"/>
+          <circle cx="96" cy="220" r="78" fill="none" stroke="#9B6DFF" stroke-width="1.5"/>
           <image href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/padma-mark-white.png' ); ?>" x="46" y="182" width="100" height="76" preserveAspectRatio="xMidYMid meet"/>
         </g>
+        <!-- MUTU PT node -->
         <g>
-          <rect x="293" y="120" width="225" height="76" rx="18" fill="#2B5BD0"/>
-          <rect x="305" y="134" width="48" height="48" rx="12" fill="#fff"/>
+          <rect x="293" y="120" width="225" height="76" rx="14" fill="#4080FF" fill-opacity=".12"/>
+          <rect x="293" y="120" width="225" height="76" rx="14" fill="none" stroke="#4080FF" stroke-width="1.2"/>
+          <rect x="305" y="134" width="48" height="48" rx="10" fill="rgba(64,128,255,.18)"/>
           <image href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mutupt-mark.png' ); ?>" x="307" y="136" width="44" height="44" preserveAspectRatio="xMidYMid meet"/>
-          <text class="node-label" x="367" y="152">MUTU PT</text>
-          <text class="node-sub" x="367" y="172">mutuperguruantinggi.id</text>
+          <text class="node-label" x="367" y="152" fill="#4080FF">MUTU PT</text>
+          <text class="node-sub"  x="367" y="172">mutuperguruantinggi.id</text>
         </g>
+        <!-- LABNESIA node -->
         <g>
-          <rect x="293" y="244" width="225" height="76" rx="18" fill="#138A66"/>
-          <rect x="305" y="258" width="48" height="48" rx="12" fill="#fff"/>
+          <rect x="293" y="244" width="225" height="76" rx="14" fill="#22C78A" fill-opacity=".10"/>
+          <rect x="293" y="244" width="225" height="76" rx="14" fill="none" stroke="#22C78A" stroke-width="1.2"/>
+          <rect x="305" y="258" width="48" height="48" rx="10" fill="rgba(34,199,138,.16)"/>
           <image href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-labnesia.gif' ); ?>" x="307" y="260" width="44" height="44" preserveAspectRatio="xMidYMid meet"/>
-          <text class="node-label" x="367" y="276">LABNESIA</text>
-          <text class="node-sub" x="367" y="296">labnesia.id</text>
+          <text class="node-label" x="367" y="276" fill="#22C78A">LABNESIA</text>
+          <text class="node-sub"  x="367" y="296">labnesia.id</text>
         </g>
       </svg>
     </div>
@@ -62,13 +67,13 @@
 </section>
 
 <!-- ============================== §01 TENTANG ============================== -->
-<section class="sec" id="tentang" aria-labelledby="ab-h">
+<section class="sec sec--alt" id="tentang" aria-labelledby="ab-h">
   <div class="wrap">
     <div class="about__grid">
       <aside class="about__aside reveal">
         <span class="clause">&sect; 01 &mdash; Tentang</span>
         <p class="quote">Kualitas unggul <span>tidak harus rumit.</span></p>
-        <p style="margin-top:16px">PT Padma Global Nusatama lahir dari pengalaman panjang mengimplementasikan standar ISO. Kami percaya mutu yang baik adalah mutu yang bisa diukur, dijalankan secara konsisten, dan berdampak nyata bagi institusi maupun individu.</p>
+        <p style="margin-top:16px;color:var(--ink-soft)">PT Padma Global Nusatama lahir dari pengalaman panjang mengimplementasikan standar ISO. Kami percaya mutu yang baik adalah mutu yang bisa diukur, dijalankan secara konsisten, dan berdampak nyata bagi institusi maupun individu.</p>
       </aside>
       <div class="about__main">
         <div class="sec__head reveal d1" style="margin-bottom:30px">
@@ -104,7 +109,7 @@
 </section>
 
 <!-- ============================== §02 EKOSISTEM ============================== -->
-<section class="sec sec--alt" id="ekosistem" aria-labelledby="ek-h">
+<section class="sec" id="ekosistem" aria-labelledby="ek-h">
   <div class="wrap">
     <div class="sec__head reveal">
       <span class="clause">&sect; 02 &mdash; Ekosistem</span>
@@ -196,12 +201,12 @@
 </section>
 
 <!-- ============================== §03 PORTOFOLIO ============================== -->
-<section class="sec" id="portofolio" aria-labelledby="pt-h">
+<section class="sec sec--alt" id="portofolio" aria-labelledby="pt-h">
   <div class="wrap">
     <div class="sec__head reveal">
       <span class="clause">&sect; 03 &mdash; Portofolio</span>
-      <h2 id="pt-h">Karya dan identitas ekosistem kami.</h2>
-      <p class="lede">Ragam identitas visual dari platform dan program yang telah kami bangun dan kembangkan untuk ekosistem mutu nasional.</p>
+      <h2 id="pt-h">Platform &amp; identitas ekosistem kami.</h2>
+      <p class="lede">Produk dan platform yang telah kami bangun untuk ekosistem mutu nasional &mdash; masing-masing dengan standar, layanan, dan dampak tersendiri.</p>
     </div>
 
     <?php
@@ -233,13 +238,15 @@
         wp_reset_postdata();
         echo '</div>';
     else :
-        $platform_images = padma_get_portfolio_images();
-        $img_base        = get_template_directory_uri() . '/assets/images/platform/';
+        /* One logo per platform — GDP Venture card style */
+        $img_base  = get_template_directory_uri() . '/assets/images/platform/';
+        $platforms = padma_get_portfolio_brands();
         echo '<div class="portfolio-grid reveal d1">';
-        foreach ( $platform_images as $img ) {
-            $img_url = esc_url( $img_base . $img );
+        foreach ( $platforms as $p ) {
+            $img_url = esc_url( $img_base . $p['logo'] );
             echo '<div class="portfolio-item">';
-            echo '<img src="' . $img_url . '" alt="" loading="lazy" />';
+            echo '<img src="' . $img_url . '" alt="' . esc_attr( $p['name'] ) . '" loading="lazy" />';
+            echo '<span class="plat-label">' . esc_html( $p['name'] ) . '</span>';
             echo '</div>';
         }
         echo '</div>';
@@ -250,12 +257,12 @@
 </section>
 
 <!-- ============================== §04 KREDIBILITAS ============================== -->
-<section class="sec sec--ink" id="kredibilitas" aria-labelledby="kr-h">
+<section class="sec" id="kredibilitas" aria-labelledby="kr-h">
   <div class="wrap">
     <div class="cred__grid">
       <div class="reveal">
         <div class="sec__head" style="margin-bottom:30px">
-          <span class="clause">&sect; 04 &mdash; Kredibilitas</span>
+          <span class="clause sec--ink .clause" style="color:var(--brass)">&sect; 04 &mdash; Kredibilitas</span>
           <h2 id="kr-h">Pengalaman dan standar yang teruji.</h2>
           <p class="lede">Berakar pada implementasi standar ISO sejak 2017, kami mendampingi institusi dengan trainer dan asesor berpengalaman lintas perguruan tinggi, laboratorium, dan industri.</p>
         </div>
@@ -296,7 +303,7 @@
 
 <!-- ============================== §05 TANYA JAWAB ============================== -->
 <section class="sec sec--alt" id="faq" aria-labelledby="fq-h">
-  <div class="wrap" style="max-width:880px">
+  <div class="wrap" style="max-width:900px">
     <div class="sec__head reveal">
       <span class="clause">&sect; 05 &mdash; Tanya Jawab</span>
       <h2 id="fq-h">Pertanyaan yang sering diajukan.</h2>
@@ -305,7 +312,7 @@
       <details open>
         <summary>Apa itu Padma Global Nusatama?
           <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg>
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </span>
         </summary>
         <p>PT Padma Global Nusatama adalah perusahaan pelatihan, pendampingan, dan sertifikasi kompetensi mutu yang berakar pada implementasi standar ISO. Kami menaungi dua platform: mutuperguruantinggi.id (mutu perguruan tinggi) dan labnesia.id (laboratorium).</p>
@@ -313,7 +320,7 @@
       <details>
         <summary>Apa perbedaan kedua platform?
           <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg>
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </span>
         </summary>
         <p>mutuperguruantinggi.id fokus pada SPMI, AMI, OBE, dan tata kelola perguruan tinggi. labnesia.id fokus pada pengembangan dan akreditasi laboratorium berbasis ISO/IEC 17025:2017. Keduanya didukung pelatihan, pendampingan, dan sertifikasi kompetensi SDM.</p>
@@ -321,7 +328,7 @@
       <details>
         <summary>Sektor apa saja yang dilayani?
           <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg>
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </span>
         </summary>
         <p>Perguruan tinggi, laboratorium di sektor pendidikan, industri, dan pemerintahan, serta institusi yang membutuhkan penguatan sistem manajemen mutu dan sertifikasi kompetensi SDM.</p>
@@ -329,7 +336,7 @@
       <details>
         <summary>Bagaimana cara memulai kerja sama?
           <span class="ic" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 5v14M5 12h14"/></svg>
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </span>
         </summary>
         <p>Hubungi platform yang paling sesuai dengan kebutuhan Anda melalui kontak di bawah. Layanan kemitraan diawali dengan analisis kondisi awal (free pre gap analysis) untuk memetakan kebutuhan institusi Anda.</p>
