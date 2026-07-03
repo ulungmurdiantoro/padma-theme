@@ -47,28 +47,34 @@
   </div>
 </div>
 
-<!-- ============================== PORTFOLIO STRIP ============================== -->
+<!-- ============================== PLATFORM STRIP ============================== -->
 <section class="sec sec--alt">
   <div class="wrap">
     <div class="sec__head reveal" style="margin-bottom:24px">
-      <span class="clause">&sect; Platform &amp; Portofolio</span>
+      <span class="clause">&sect; Platform</span>
       <h2>Ekosistem yang kami bangun.</h2>
     </div>
 
     <?php
-    $img_base  = get_template_directory_uri() . '/assets/images/platform/';
-    $brands    = padma_get_portfolio_brands();
+    $img_base = get_template_directory_uri() . '/assets/images/platform/';
+    $brands   = padma_get_portfolio_brands();
     echo '<div class="port-strip__logos reveal d1">';
     foreach ( $brands as $b ) {
-      echo '<div class="port-strip__logo-tile">';
-      echo '<img src="' . esc_url( $img_base . $b['logo'] ) . '" alt="' . esc_attr( $b['name'] ) . '" loading="lazy">';
-      echo '</div>';
+      echo '<a class="port-strip__logo-tile" href="' . esc_url( $b['url'] ) . '" target="_blank" rel="noopener" title="' . esc_attr( $b['name'] ) . '">';
+      if ( ! empty( $b['clip'] ) ) {
+        echo '<div class="logo-clip logo-clip--strip">';
+        echo '<img src="' . esc_url( $img_base . $b['logo'] ) . '" alt="' . esc_attr( $b['name'] ) . '" loading="lazy">';
+        echo '</div>';
+      } else {
+        echo '<img src="' . esc_url( $img_base . $b['logo'] ) . '" alt="' . esc_attr( $b['name'] ) . '" loading="lazy">';
+      }
+      echo '</a>';
     }
     echo '</div>';
     ?>
 
-    <a class="port-strip__link reveal d2" href="<?php echo esc_url( home_url('/portofolio/') ); ?>">
-      Lihat semua portofolio
+    <a class="port-strip__link reveal d2" href="<?php echo esc_url( home_url('/platform/') ); ?>">
+      Lihat semua platform
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
@@ -98,23 +104,25 @@
 <section class="sec sec--alt">
   <div class="wrap">
     <div class="sec__head reveal">
-      <span class="clause">&sect; Dua Platform</span>
-      <h2>Satu standar, dua spesialisasi.</h2>
-      <p class="lede">Platform kami fokus pada bidang masing-masing namun terhubung satu sama lain melalui standar mutu yang sama.</p>
+      <span class="clause">&sect; Platform Unggulan</span>
+      <h2>Satu standar, empat spesialisasi.</h2>
+      <p class="lede">Setiap platform kami fokus pada bidangnya, terhubung melalui satu standar mutu yang sama.</p>
     </div>
 
     <div class="plats-home">
       <!-- MUTU PT -->
       <article class="plat-home reveal" style="--accent:var(--c-mpt)">
         <div>
-          <div class="plat-home__badge">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mutupt-mark.png' ); ?>" alt="Mutu Perguruan Tinggi">
+          <div class="plat-home__badge" style="overflow:hidden;background:#fff;padding:4px">
+            <div class="logo-clip logo-clip--badge">
+              <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-EDITED.png' ); ?>" alt="Mutu Perguruan Tinggi">
+            </div>
           </div>
         </div>
         <div>
-          <div class="plat-home__code">PT-EDU &middot; Perguruan Tinggi</div>
+          <div class="plat-home__code">Perguruan Tinggi &middot; Akreditasi</div>
           <h3>mutuperguruantinggi.id</h3>
-          <p>Platform peningkatan mutu dan tata kelola perguruan tinggi. Menyediakan Pelatihan 40 JP, pendampingan SPMI/AMI, dan Sistem AMI Digital selaras Permendiktisaintek 39 &amp; 40/2025.</p>
+          <p>Peningkatan mutu dan tata kelola perguruan tinggi — SPMI, AMI Digital, OBE, selaras Permendiktisaintek 39 &amp; 40/2025.</p>
         </div>
         <div class="plat-home__footer">
           <div class="plat-home__metrics">
@@ -127,8 +135,8 @@
               <span>SDM sertifikasi</span>
             </div>
           </div>
-          <a class="plat-home__link" href="<?php echo esc_url( home_url('/platform/') ); ?>">
-            Pelajari
+          <a class="plat-home__link" href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">
+            Kunjungi
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
           </a>
         </div>
@@ -142,9 +150,9 @@
           </div>
         </div>
         <div>
-          <div class="plat-home__code">PT-LAB &middot; Laboratorium</div>
+          <div class="plat-home__code">Laboratorium &middot; ISO 17025</div>
           <h3>labnesia.id</h3>
-          <p>Mitra pengembangan laboratorium untuk sektor pendidikan, industri, dan pemerintah. Fokus pada pendampingan akreditasi ISO/IEC 17025:2017 dan sertifikasi kompetensi SDM lab.</p>
+          <p>Mitra pengembangan laboratorium untuk pendidikan, industri, dan pemerintah — pendampingan akreditasi ISO/IEC 17025:2017.</p>
         </div>
         <div class="plat-home__footer">
           <div class="plat-home__metrics">
@@ -157,12 +165,71 @@
               <span>Personel lab</span>
             </div>
           </div>
-          <a class="plat-home__link" href="<?php echo esc_url( home_url('/platform/') ); ?>">
-            Pelajari
+          <a class="plat-home__link" href="https://labnesia.id" target="_blank" rel="noopener">
+            Kunjungi
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
           </a>
         </div>
       </article>
+
+      <!-- EXPERTIA -->
+      <article class="plat-home reveal d2" style="--accent:#9B6DFF">
+        <div>
+          <div class="plat-home__badge" style="background:var(--bg-card-2)">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-EXPERTIA-002.png' ); ?>" alt="Expertia">
+          </div>
+        </div>
+        <div>
+          <div class="plat-home__code">Kompetensi &middot; Sertifikasi</div>
+          <h3>expertia.id</h3>
+          <p>Platform sertifikasi kompetensi SDM yang mengakui keahlian secara formal sesuai KKNI dan standar internasional.</p>
+        </div>
+        <div class="plat-home__footer">
+          <div class="plat-home__metrics">
+            <div class="plat-home__metric">
+              <b>KKNI</b>
+              <span>Skema sertifikasi</span>
+            </div>
+          </div>
+          <a class="plat-home__link" href="https://expertia.id/" target="_blank" rel="noopener">
+            Kunjungi
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- MUTU LULUSAN -->
+      <article class="plat-home reveal d3" style="--accent:#E8A730">
+        <div>
+          <div class="plat-home__badge" style="background:var(--bg-card-2)">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/MUTULULUSAN-LOGO-3.gif' ); ?>" alt="Mutu Lulusan">
+          </div>
+        </div>
+        <div>
+          <div class="plat-home__code">Pendidikan &middot; SDM</div>
+          <h3>mutululusan.id</h3>
+          <p>Platform peningkatan kualitas lulusan perguruan tinggi — memastikan SDM siap kerja dengan kompetensi terukur.</p>
+        </div>
+        <div class="plat-home__footer">
+          <div class="plat-home__metrics">
+            <div class="plat-home__metric">
+              <b>SDM</b>
+              <span>Siap kerja</span>
+            </div>
+          </div>
+          <a class="plat-home__link" href="https://mutululusan.id/" target="_blank" rel="noopener">
+            Kunjungi
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div style="margin-top:32px" class="reveal d4">
+      <a class="port-strip__link" href="<?php echo esc_url( home_url('/platform/') ); ?>">
+        Lihat detail semua platform
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
     </div>
   </div>
 </section>

@@ -31,10 +31,10 @@
       <div>
         <h4>Platform</h4>
         <ul>
-          <li><a href="<?php echo esc_url( home_url('/platform/') ); ?>">Mutu Perguruan Tinggi</a></li>
-          <li><a href="<?php echo esc_url( home_url('/platform/') ); ?>">Labnesia</a></li>
-          <li><a href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">mutuperguruantinggi.id ↗</a></li>
-          <li><a href="https://labnesia.id" target="_blank" rel="noopener">labnesia.id ↗</a></li>
+          <li><a href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">Mutu Perguruan Tinggi ↗</a></li>
+          <li><a href="https://labnesia.id" target="_blank" rel="noopener">Labnesia ↗</a></li>
+          <li><a href="https://expertia.id/" target="_blank" rel="noopener">Expertia ↗</a></li>
+          <li><a href="https://mutululusan.id/" target="_blank" rel="noopener">Mutu Lulusan ↗</a></li>
         </ul>
       </div>
 
@@ -43,8 +43,8 @@
         <h4>Navigasi</h4>
         <ul>
           <li><a href="<?php echo esc_url( home_url('/') ); ?>">Beranda</a></li>
+          <li><a href="<?php echo esc_url( home_url('/platform/') ); ?>">Platform</a></li>
           <li><a href="<?php echo esc_url( home_url('/tentang/') ); ?>">Tentang Kami</a></li>
-          <li><a href="<?php echo esc_url( home_url('/portofolio/') ); ?>">Portofolio</a></li>
           <li><a href="<?php echo esc_url( home_url('/kontak/') ); ?>">Kontak</a></li>
         </ul>
       </div>

@@ -122,11 +122,35 @@ add_action( 'wp_head', 'padma_structured_data' );
  */
 function padma_get_portfolio_brands() {
     return [
-        [ 'logo' => 'LOGO-PADMA-WHITE.gif',                   'name' => 'Padma Global Nusatama' ],
-        [ 'logo' => 'LOGO-MUTU-PERGURUAN-TINGGI-17032025.png', 'name' => 'Mutu Perguruan Tinggi' ],
-        [ 'logo' => 'LOGO-LABNESIA-001.gif',                  'name' => 'Labnesia' ],
-        [ 'logo' => 'LOGO-EXPERTIA-002.png',                  'name' => 'Expertia' ],
-        [ 'logo' => 'MUTULULUSAN-LOGO-3.gif',                 'name' => 'Mutu Lulusan' ],
+        [
+            'logo'   => 'LOGO-MUTU-PT-EDITED.png',
+            'name'   => 'Mutu Perguruan Tinggi',
+            'url'    => 'https://mutuperguruantinggi.id',
+            'tag'    => 'Perguruan Tinggi &middot; Akreditasi',
+            'accent' => 'var(--c-mpt)',
+            'clip'   => true,
+        ],
+        [
+            'logo' => 'LOGO-LABNESIA-001.gif',
+            'name' => 'Labnesia',
+            'url'  => 'https://labnesia.id',
+            'tag'  => 'Laboratorium &middot; ISO 17025',
+            'accent' => 'var(--c-lab)',
+        ],
+        [
+            'logo' => 'LOGO-EXPERTIA-002.png',
+            'name' => 'Expertia',
+            'url'  => 'https://expertia.id/',
+            'tag'  => 'Kompetensi &middot; Sertifikasi',
+            'accent' => '#9B6DFF',
+        ],
+        [
+            'logo' => 'MUTULULUSAN-LOGO-3.gif',
+            'name' => 'Mutu Lulusan',
+            'url'  => 'https://mutululusan.id/',
+            'tag'  => 'Pendidikan &middot; SDM',
+            'accent' => '#E8A730',
+        ],
     ];
 }
 
@@ -166,7 +190,7 @@ function padma_get_demo_leaders() {
 /**
  * Generate 2-letter initials from a name string.
  */
-function padma_get_initials( $name ) {
+function padma_get_initials( string $name ): string {
     $parts = array_filter( explode( ' ', $name ) );
     if ( count( $parts ) >= 2 ) {
         return strtoupper( mb_substr( $parts[0], 0, 1 ) . mb_substr( end( $parts ), 0, 1 ) );

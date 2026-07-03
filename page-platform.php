@@ -6,121 +6,79 @@
   <div class="wrap">
     <div class="page-hero__inner">
       <span class="clause">&sect; Platform</span>
-      <h1>Dua platform,<br>satu standar mutu.</h1>
-      <p class="lede">Masing-masing fokus pada bidangnya, terhubung oleh satu standar: pelatihan, pendampingan, dan sertifikasi kompetensi berstandar internasional.</p>
+      <h1>Platform yang kami<br>bangun untuk Indonesia.</h1>
+      <p class="lede">Empat platform yang saling melengkapi dalam satu ekosistem mutu — dari perguruan tinggi dan laboratorium hingga kompetensi SDM dan kualitas lulusan.</p>
     </div>
   </div>
 </div>
 
-<!-- PLATFORM CARDS -->
+<!-- PLATFORM GRID -->
 <section class="sec">
   <div class="wrap">
-    <div class="plat-detail">
+    <?php
+    $brands   = padma_get_portfolio_brands();
+    $img_base = get_template_directory_uri() . '/assets/images/platform/';
+    ?>
 
-      <!-- MUTUPERGURUANTINGGI -->
-      <article class="plat-detail-card reveal" style="--accent:var(--c-mpt)">
-        <div class="plat-detail-card__head">
-          <div class="plat-detail-card__logo">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/mutupt-mark.png' ); ?>" alt="Mutu Perguruan Tinggi">
-          </div>
-          <div>
-            <div class="plat-detail-card__code">PT-EDU &middot; Perguruan Tinggi</div>
-            <h3>mutuperguruantinggi.id</h3>
-            <div class="plat-role">Peningkatan mutu &amp; tata kelola perguruan tinggi</div>
-          </div>
+    <div class="platform-list">
+      <?php foreach ( $brands as $i => $p ) :
+        $delay = ( $i % 3 ) ? ' d' . ( $i % 3 ) : '';
+      ?>
+      <article class="platform-row reveal<?php echo $delay; ?>" style="--accent:<?php echo esc_attr( $p['accent'] ); ?>">
+        <div class="platform-row__logo">
+          <?php if ( ! empty( $p['clip'] ) ) : ?>
+            <div class="logo-clip logo-clip--row">
+              <img src="<?php echo esc_url( $img_base . $p['logo'] ); ?>"
+                   alt="<?php echo esc_attr( $p['name'] ); ?>" loading="lazy">
+            </div>
+          <?php else : ?>
+            <img src="<?php echo esc_url( $img_base . $p['logo'] ); ?>"
+                 alt="<?php echo esc_attr( $p['name'] ); ?>" loading="lazy">
+          <?php endif; ?>
         </div>
-
-        <p>Platform pionir peningkatan mutu dan tata kelola perguruan tinggi sejak 2022. Menyediakan ekosistem lengkap mulai dari pelatihan, pendampingan, hingga sertifikasi kompetensi SDM akademik — selaras penuh dengan regulasi terbaru Permendiktisaintek No. 39 &amp; 40 Tahun 2025.</p>
-
-        <div class="chips">
-          <span class="chip">SPMI</span>
-          <span class="chip">AMI Digital</span>
-          <span class="chip">OBE</span>
-          <span class="chip">Tata Kelola PT</span>
-          <span class="chip">ISO 21001:2018</span>
-          <span class="chip">Akreditasi</span>
-          <span class="chip">Pelatihan 40 JP</span>
+        <div class="platform-row__body">
+          <div class="platform-row__tag"><?php echo wp_kses_post( $p['tag'] ); ?></div>
+          <h3 class="platform-row__name"><?php echo esc_html( $p['name'] ); ?></h3>
+          <div class="platform-row__url"><?php echo esc_html( preg_replace('#^https?://#', '', rtrim( $p['url'], '/' ) ) ); ?></div>
         </div>
-
-        <div class="plat-metrics">
-          <div class="plat-metric"><b>600+</b><span>Perguruan tinggi &amp; instansi dilayani</span></div>
-          <div class="plat-metric"><b>4.500+</b><span>Sivitas akademika terlatih</span></div>
-          <div class="plat-metric"><b>550+</b><span>SDM tersertifikasi</span></div>
-          <div class="plat-metric"><b>2022</b><span>Tahun pendirian platform</span></div>
-        </div>
-
-        <a class="plat-visit" href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">
-          Kunjungi mutuperguruantinggi.id
+        <a class="platform-row__cta" href="<?php echo esc_url( $p['url'] ); ?>" target="_blank" rel="noopener">
+          Kunjungi
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
         </a>
       </article>
-
-      <!-- LABNESIA -->
-      <article class="plat-detail-card reveal d1" style="--accent:var(--c-lab)">
-        <div class="plat-detail-card__head">
-          <div class="plat-detail-card__logo">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-labnesia.gif' ); ?>" alt="Labnesia">
-          </div>
-          <div>
-            <div class="plat-detail-card__code">PT-LAB &middot; Laboratorium</div>
-            <h3>labnesia.id</h3>
-            <div class="plat-role">Mitra pengembangan laboratorium unggul</div>
-          </div>
-        </div>
-
-        <p>Mitra terpercaya pengembangan laboratorium untuk sektor pendidikan, industri, dan pemerintah. Fokus pada pendampingan akreditasi ISO/IEC 17025:2017, pelatihan teknis &amp; manajerial, serta sertifikasi kompetensi SDM laboratorium — dari gap analysis hingga lab siap asesmen.</p>
-
-        <div class="chips">
-          <span class="chip">ISO/IEC 17025:2017</span>
-          <span class="chip">GLP</span>
-          <span class="chip">Akreditasi Lab</span>
-          <span class="chip">Validasi Metode</span>
-          <span class="chip">Uji Profisiensi</span>
-          <span class="chip">Kalibrasi</span>
-        </div>
-
-        <div class="plat-metrics">
-          <div class="plat-metric"><b>30+</b><span>Laboratorium terakreditasi</span></div>
-          <div class="plat-metric"><b>100+</b><span>Personel lab tersertifikasi</span></div>
-          <div class="plat-metric"><b>8</b><span>Bidang laboratorium didampingi</span></div>
-          <div class="plat-metric"><b>KAN</b><span>Acuan akreditasi nasional</span></div>
-        </div>
-
-        <a class="plat-visit" href="https://labnesia.id" target="_blank" rel="noopener">
-          Kunjungi labnesia.id
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
-        </a>
-      </article>
-
+      <?php endforeach; ?>
     </div>
+  </div>
+</section>
 
-    <!-- LAYANAN KAMI -->
-    <div class="sec__head reveal" style="margin-top:40px">
-      <span class="clause">Layanan Utama</span>
-      <h2>Apa yang kami lakukan.</h2>
-      <p class="lede">Tiga pilar layanan yang menopang setiap langkah perjalanan mutu institusi dan SDM Anda.</p>
+<!-- LAYANAN UTAMA -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head reveal">
+      <span class="clause">Layanan di Semua Platform</span>
+      <h2>Tiga pilar layanan kami.</h2>
+      <p class="lede">Setiap platform kami didukung oleh tiga layanan utama yang memastikan perjalanan mutu institusi dan SDM Anda berjalan tuntas.</p>
     </div>
-
     <div class="pillars reveal d1">
       <div class="pillar">
         <span class="pillar__no">01</span>
         <div>
           <h3>Pelatihan &amp; Workshop</h3>
-          <p>Program pelatihan terstruktur dengan modul sesuai standar — dari awareness hingga implementor. Tersedia online, offline, dan hybrid dengan sertifikat kompetensi yang diakui.</p>
+          <p>Program terstruktur dengan modul sesuai standar — online, offline, dan hybrid — dilengkapi sertifikat kompetensi yang diakui secara nasional dan internasional.</p>
         </div>
       </div>
       <div class="pillar">
         <span class="pillar__no">02</span>
         <div>
           <h3>Pendampingan Implementasi</h3>
-          <p>Pendampingan langsung oleh konsultan berpengalaman dari gap analysis, penyusunan dokumen, hingga internal audit — memastikan institusi siap menghadapi asesmen.</p>
+          <p>Konsultan berpengalaman mendampingi langsung dari gap analysis, penyusunan dokumen, internal audit, hingga institusi siap menghadapi asesmen eksternal.</p>
         </div>
       </div>
       <div class="pillar">
         <span class="pillar__no">03</span>
         <div>
           <h3>Sertifikasi Kompetensi</h3>
-          <p>Proses sertifikasi resmi yang mengakui kompetensi SDM secara formal — dengan skema sesuai KKNI dan standar internasional yang relevan.</p>
+          <p>Pengakuan formal kompetensi SDM melalui skema sertifikasi sesuai KKNI dan standar internasional — bukti nyata bahwa SDM Anda memenuhi standar terbaik.</p>
         </div>
       </div>
     </div>
@@ -131,7 +89,7 @@
 <section class="cta-band">
   <div class="wrap">
     <h2 class="reveal">Mulai dari platform<br>yang tepat untuk Anda.</h2>
-    <p class="reveal d1">Konsultasikan kebutuhan institusi Anda bersama tim kami — gratis, tanpa komitmen awal.</p>
+    <p class="reveal d1">Konsultasikan kebutuhan institusi Anda — gratis, tanpa komitmen awal.</p>
     <div class="cta-band__actions reveal d2">
       <a class="btn btn--ink btn--lg" href="<?php echo esc_url( home_url('/kontak/') ); ?>">Hubungi Kami</a>
     </div>

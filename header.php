@@ -27,11 +27,10 @@
       $home    = trailingslashit( home_url( '/' ) );
 
       $nav_items = [
-        'Beranda'    => home_url( '/' ),
-        'Platform'   => home_url( '/platform/' ),
-        'Portofolio' => home_url( '/portofolio/' ),
-        'Tentang'    => home_url( '/tentang/' ),
-        'Kontak'     => home_url( '/kontak/' ),
+        'Beranda'  => home_url( '/' ),
+        'Platform' => home_url( '/platform/' ),
+        'Tentang'  => home_url( '/tentang/' ),
+        'Kontak'   => home_url( '/kontak/' ),
       ];
 
       foreach ( $nav_items as $label => $url ) {
