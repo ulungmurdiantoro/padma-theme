@@ -114,7 +114,7 @@
       <article class="plat-home reveal" style="--accent:var(--c-mpt)">
         <div>
           <div class="plat-home__badge">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-TR.png' ); ?>" alt="Mutu Perguruan Tinggi">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-ICON.png' ); ?>" alt="Mutu Perguruan Tinggi">
           </div>
         </div>
         <div>
@@ -144,7 +144,7 @@
       <article class="plat-home reveal d1" style="--accent:var(--c-lab)">
         <div>
           <div class="plat-home__badge">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-LABNESIA-TR.png' ); ?>" alt="Labnesia">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-LABNESIA-ICON.png' ); ?>" alt="Labnesia">
           </div>
         </div>
         <div>

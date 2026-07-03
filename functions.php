@@ -130,7 +130,7 @@ function padma_get_portfolio_brands() {
             'accent' => 'var(--c-mpt)',
         ],
         [
-            'logo'   => 'LOGO-LABNESIA-TR.png',
+            'logo'   => 'LOGO-LABNESIA-ICON.png',
             'name'   => 'Labnesia',
             'url'    => 'https://labnesia.id',
             'tag'    => 'Laboratorium &middot; ISO 17025',
