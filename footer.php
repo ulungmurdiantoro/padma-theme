@@ -31,10 +31,10 @@
       <div>
         <h4>Platform</h4>
         <ul>
-          <li><a href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">Mutu Perguruan Tinggi ↗</a></li>
-          <li><a href="https://labnesia.id" target="_blank" rel="noopener">Labnesia ↗</a></li>
-          <li><a href="https://expertia.id/" target="_blank" rel="noopener">Expertia ↗</a></li>
-          <li><a href="https://mutululusan.id/" target="_blank" rel="noopener">Mutu Lulusan ↗</a></li>
+          <li><a href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">Mutu Perguruan Tinggi<svg class="ext-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 9.5 9.5 2.5M5.5 2.5h4v4"/></svg></a></li>
+          <li><a href="https://labnesia.id" target="_blank" rel="noopener">Labnesia<svg class="ext-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 9.5 9.5 2.5M5.5 2.5h4v4"/></svg></a></li>
+          <li><a href="https://expertia.id/" target="_blank" rel="noopener">Expertia<svg class="ext-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 9.5 9.5 2.5M5.5 2.5h4v4"/></svg></a></li>
+          <li><a href="https://mutululusan.id/" target="_blank" rel="noopener">Mutu Lulusan<svg class="ext-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 9.5 9.5 2.5M5.5 2.5h4v4"/></svg></a></li>
         </ul>
       </div>
 

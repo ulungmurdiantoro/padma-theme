@@ -30,7 +30,7 @@ function padma_enqueue_scripts() {
         'padma-style',
         get_stylesheet_uri(),
         [ 'padma-fonts' ],
-        '3.4.0'
+        '3.5.0'
     );
     wp_enqueue_script(
         'padma-main',

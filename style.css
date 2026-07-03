@@ -301,6 +301,15 @@ h1, h2, h3, h4 {
 .port-strip__link:hover { color: #fff; gap: 13px; border-color: var(--ink-2); }
 .port-strip__link svg { width: 14px; height: 14px; }
 
+/* External link icon — replaces ↗ emoji to prevent colored rendering */
+.ext-icon {
+  width: 10px; height: 10px;
+  vertical-align: middle;
+  margin-left: 4px;
+  opacity: .5;
+  flex-shrink: 0;
+}
+
 /* =========================================================================
    ABOUT TEASER — split text (homepage)
    ========================================================================= */

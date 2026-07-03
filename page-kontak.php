@@ -25,7 +25,7 @@
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-ICON.png' ); ?>" alt="Mutu Perguruan Tinggi">
           </div>
           <h3>mutuperguruantinggi.id</h3>
-          <a class="contact-card__url" href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">mutuperguruantinggi.id ↗</a>
+          <a class="contact-card__url" href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">mutuperguruantinggi.id<svg class="ext-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 9.5 9.5 2.5M5.5 2.5h4v4"/></svg></a>
           <div class="contact-links">
             <a href="tel:+6281286563234">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a14 14 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
@@ -47,7 +47,7 @@
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-LABNESIA-ICON.png' ); ?>" alt="Labnesia">
           </div>
           <h3>labnesia.id</h3>
-          <a class="contact-card__url" href="https://labnesia.id" target="_blank" rel="noopener">labnesia.id ↗</a>
+          <a class="contact-card__url" href="https://labnesia.id" target="_blank" rel="noopener">labnesia.id<svg class="ext-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 9.5 9.5 2.5M5.5 2.5h4v4"/></svg></a>
           <div class="contact-links">
             <a href="tel:+6282172221567">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a14 14 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
