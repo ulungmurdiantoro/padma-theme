@@ -174,7 +174,7 @@
       <article class="plat-home reveal d2" style="--accent:#9B6DFF">
         <div>
           <div class="plat-home__badge">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-EXPERTIA-TR.png' ); ?>" alt="Expertia">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-EXPERTIA-ICON.png' ); ?>" alt="Expertia">
           </div>
         </div>
         <div>
@@ -200,7 +200,7 @@
       <article class="plat-home reveal d3" style="--accent:#E8A730">
         <div>
           <div class="plat-home__badge">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/MUTULULUSAN-TR.png' ); ?>" alt="Mutu Lulusan">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/MUTULULUSAN-ICON.png' ); ?>" alt="Mutu Lulusan">
           </div>
         </div>
         <div>

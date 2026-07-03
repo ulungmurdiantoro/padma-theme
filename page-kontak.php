@@ -44,7 +44,7 @@
 
         <div class="contact-card reveal d1" style="--accent:var(--c-lab)">
           <div class="contact-card__logo">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-LABNESIA-TR.png' ); ?>" alt="Labnesia">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-LABNESIA-ICON.png' ); ?>" alt="Labnesia">
           </div>
           <h3>labnesia.id</h3>
           <a class="contact-card__url" href="https://labnesia.id" target="_blank" rel="noopener">labnesia.id ↗</a>
