@@ -26,15 +26,10 @@
       ?>
       <article class="platform-row reveal<?php echo $delay; ?>" style="--accent:<?php echo esc_attr( $p['accent'] ); ?>">
         <div class="platform-row__logo">
-          <?php if ( ! empty( $p['clip'] ) ) : ?>
-            <div class="logo-clip logo-clip--row">
-              <img src="<?php echo esc_url( $img_base . $p['logo'] ); ?>"
-                   alt="<?php echo esc_attr( $p['name'] ); ?>" loading="lazy">
-            </div>
-          <?php else : ?>
+          <div class="logo-box<?php echo ! empty( $p['clip'] ) ? ' logo-box--clip' : ''; ?>">
             <img src="<?php echo esc_url( $img_base . $p['logo'] ); ?>"
                  alt="<?php echo esc_attr( $p['name'] ); ?>" loading="lazy">
-          <?php endif; ?>
+          </div>
         </div>
         <div class="platform-row__body">
           <div class="platform-row__tag"><?php echo wp_kses_post( $p['tag'] ); ?></div>

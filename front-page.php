@@ -113,10 +113,8 @@
       <!-- MUTU PT -->
       <article class="plat-home reveal" style="--accent:var(--c-mpt)">
         <div>
-          <div class="plat-home__badge" style="overflow:hidden;background:#fff;padding:4px">
-            <div class="logo-clip logo-clip--badge">
-              <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-EDITED.png' ); ?>" alt="Mutu Perguruan Tinggi">
-            </div>
+          <div class="plat-home__badge plat-home__badge--clip">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-EDITED.png' ); ?>" alt="Mutu Perguruan Tinggi">
           </div>
         </div>
         <div>
@@ -146,7 +144,7 @@
       <article class="plat-home reveal d1" style="--accent:var(--c-lab)">
         <div>
           <div class="plat-home__badge">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-labnesia.gif' ); ?>" alt="Labnesia">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-labnesia.gif' ); ?>" alt="Labnesia" style="width:38px;height:38px;object-fit:contain">
           </div>
         </div>
         <div>
@@ -175,7 +173,7 @@
       <!-- EXPERTIA -->
       <article class="plat-home reveal d2" style="--accent:#9B6DFF">
         <div>
-          <div class="plat-home__badge" style="background:var(--bg-card-2)">
+          <div class="plat-home__badge plat-home__badge--clip">
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-EXPERTIA-002.png' ); ?>" alt="Expertia">
           </div>
         </div>
@@ -201,7 +199,7 @@
       <!-- MUTU LULUSAN -->
       <article class="plat-home reveal d3" style="--accent:#E8A730">
         <div>
-          <div class="plat-home__badge" style="background:var(--bg-card-2)">
+          <div class="plat-home__badge plat-home__badge--clip">
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/MUTULULUSAN-LOGO-3.gif' ); ?>" alt="Mutu Lulusan">
           </div>
         </div>

@@ -30,7 +30,7 @@ function padma_enqueue_scripts() {
         'padma-style',
         get_stylesheet_uri(),
         [ 'padma-fonts' ],
-        '3.0.0'
+        '3.1.0'
     );
     wp_enqueue_script(
         'padma-main',
@@ -138,18 +138,20 @@ function padma_get_portfolio_brands() {
             'accent' => 'var(--c-lab)',
         ],
         [
-            'logo' => 'LOGO-EXPERTIA-002.png',
-            'name' => 'Expertia',
-            'url'  => 'https://expertia.id/',
-            'tag'  => 'Kompetensi &middot; Sertifikasi',
+            'logo'   => 'LOGO-EXPERTIA-002.png',
+            'name'   => 'Expertia',
+            'url'    => 'https://expertia.id/',
+            'tag'    => 'Kompetensi &middot; Sertifikasi',
             'accent' => '#9B6DFF',
+            'clip'   => true,
         ],
         [
-            'logo' => 'MUTULULUSAN-LOGO-3.gif',
-            'name' => 'Mutu Lulusan',
-            'url'  => 'https://mutululusan.id/',
-            'tag'  => 'Pendidikan &middot; SDM',
+            'logo'   => 'MUTULULUSAN-LOGO-3.gif',
+            'name'   => 'Mutu Lulusan',
+            'url'    => 'https://mutululusan.id/',
+            'tag'    => 'Pendidikan &middot; SDM',
             'accent' => '#E8A730',
+            'clip'   => true,
         ],
     ];
 }
