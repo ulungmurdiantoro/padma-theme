@@ -30,7 +30,7 @@ function padma_enqueue_scripts() {
         'padma-style',
         get_stylesheet_uri(),
         [ 'padma-fonts' ],
-        '3.1.0'
+        '3.2.0'
     );
     wp_enqueue_script(
         'padma-main',
@@ -123,7 +123,7 @@ add_action( 'wp_head', 'padma_structured_data' );
 function padma_get_portfolio_brands() {
     return [
         [
-            'logo'   => 'LOGO-MUTU-PT-EDITED.png',
+            'logo'   => 'LOGO-MUTU-PT-TR.png',
             'name'   => 'Mutu Perguruan Tinggi',
             'url'    => 'https://mutuperguruantinggi.id',
             'tag'    => 'Perguruan Tinggi &middot; Akreditasi',
@@ -131,14 +131,14 @@ function padma_get_portfolio_brands() {
             'clip'   => true,
         ],
         [
-            'logo' => 'LOGO-LABNESIA-001.gif',
-            'name' => 'Labnesia',
-            'url'  => 'https://labnesia.id',
-            'tag'  => 'Laboratorium &middot; ISO 17025',
+            'logo'   => 'LOGO-LABNESIA-TR.png',
+            'name'   => 'Labnesia',
+            'url'    => 'https://labnesia.id',
+            'tag'    => 'Laboratorium &middot; ISO 17025',
             'accent' => 'var(--c-lab)',
         ],
         [
-            'logo'   => 'LOGO-EXPERTIA-002.png',
+            'logo'   => 'LOGO-EXPERTIA-TR.png',
             'name'   => 'Expertia',
             'url'    => 'https://expertia.id/',
             'tag'    => 'Kompetensi &middot; Sertifikasi',
@@ -146,7 +146,7 @@ function padma_get_portfolio_brands() {
             'clip'   => true,
         ],
         [
-            'logo'   => 'MUTULULUSAN-LOGO-3.gif',
+            'logo'   => 'MUTULULUSAN-TR.png',
             'name'   => 'Mutu Lulusan',
             'url'    => 'https://mutululusan.id/',
             'tag'    => 'Pendidikan &middot; SDM',

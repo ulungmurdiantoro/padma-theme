@@ -114,7 +114,7 @@
       <article class="plat-home reveal" style="--accent:var(--c-mpt)">
         <div>
           <div class="plat-home__badge plat-home__badge--clip">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-EDITED.png' ); ?>" alt="Mutu Perguruan Tinggi">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-TR.png' ); ?>" alt="Mutu Perguruan Tinggi">
           </div>
         </div>
         <div>
@@ -144,7 +144,7 @@
       <article class="plat-home reveal d1" style="--accent:var(--c-lab)">
         <div>
           <div class="plat-home__badge">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-labnesia.gif' ); ?>" alt="Labnesia" style="width:38px;height:38px;object-fit:contain">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-LABNESIA-TR.png' ); ?>" alt="Labnesia">
           </div>
         </div>
         <div>
@@ -174,7 +174,7 @@
       <article class="plat-home reveal d2" style="--accent:#9B6DFF">
         <div>
           <div class="plat-home__badge plat-home__badge--clip">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-EXPERTIA-002.png' ); ?>" alt="Expertia">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-EXPERTIA-TR.png' ); ?>" alt="Expertia">
           </div>
         </div>
         <div>
@@ -200,7 +200,7 @@
       <article class="plat-home reveal d3" style="--accent:#E8A730">
         <div>
           <div class="plat-home__badge plat-home__badge--clip">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/MUTULULUSAN-LOGO-3.gif' ); ?>" alt="Mutu Lulusan">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/MUTULULUSAN-TR.png' ); ?>" alt="Mutu Lulusan">
           </div>
         </div>
         <div>

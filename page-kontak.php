@@ -22,7 +22,7 @@
 
         <div class="contact-card reveal" style="--accent:var(--c-mpt)">
           <div class="contact-card__logo contact-card__logo--clip">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-EDITED.png' ); ?>" alt="Mutu Perguruan Tinggi">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-TR.png' ); ?>" alt="Mutu Perguruan Tinggi">
           </div>
           <h3>mutuperguruantinggi.id</h3>
           <a class="contact-card__url" href="https://mutuperguruantinggi.id" target="_blank" rel="noopener">mutuperguruantinggi.id ↗</a>
@@ -44,7 +44,7 @@
 
         <div class="contact-card reveal d1" style="--accent:var(--c-lab)">
           <div class="contact-card__logo">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-labnesia.gif' ); ?>" alt="Labnesia" style="width:34px;height:34px;object-fit:contain">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-LABNESIA-TR.png' ); ?>" alt="Labnesia">
           </div>
           <h3>labnesia.id</h3>
           <a class="contact-card__url" href="https://labnesia.id" target="_blank" rel="noopener">labnesia.id ↗</a>
