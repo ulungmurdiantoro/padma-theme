@@ -21,7 +21,7 @@
       <div class="contact-cards">
 
         <div class="contact-card reveal" style="--accent:var(--c-mpt)">
-          <div class="contact-card__logo contact-card__logo--clip">
+          <div class="contact-card__logo">
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/platform/LOGO-MUTU-PT-TR.png' ); ?>" alt="Mutu Perguruan Tinggi">
           </div>
           <h3>mutuperguruantinggi.id</h3>

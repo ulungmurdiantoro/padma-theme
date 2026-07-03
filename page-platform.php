@@ -26,7 +26,7 @@
       ?>
       <article class="platform-row reveal<?php echo $delay; ?>" style="--accent:<?php echo esc_attr( $p['accent'] ); ?>">
         <div class="platform-row__logo">
-          <div class="logo-box<?php echo ! empty( $p['clip'] ) ? ' logo-box--clip' : ''; ?>">
+          <div class="logo-box">
             <img src="<?php echo esc_url( $img_base . $p['logo'] ); ?>"
                  alt="<?php echo esc_attr( $p['name'] ); ?>" loading="lazy">
           </div>
