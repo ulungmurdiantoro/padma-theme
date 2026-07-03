@@ -30,13 +30,13 @@ function padma_enqueue_scripts() {
         'padma-style',
         get_stylesheet_uri(),
         [ 'padma-fonts' ],
-        '3.5.0'
+        '3.9.0'
     );
     wp_enqueue_script(
         'padma-main',
         get_template_directory_uri() . '/assets/js/main.js',
         [],
-        '3.0.0',
+        '3.3.0',
         true
     );
 }
@@ -159,42 +159,31 @@ function padma_get_portfolio_images() {
 }
 
 /**
- * Demo leader data — replace with real data when ready.
+ * Leadership team — name, title, and photo filename (in /assets/images/pimpinan/).
  */
-function padma_get_demo_leaders() {
+function padma_get_leaders() {
     return [
         [
-            'name'  => 'Nama Pemimpin',
+            'name'  => 'Raninda Wahyudianti',
             'title' => 'Direktur Utama',
-            'bio'   => 'Praktisi mutu dan ISO berpengalaman lebih dari 15 tahun di sektor pendidikan tinggi dan industri.',
+            'photo' => 'raninda.png',
         ],
         [
-            'name'  => 'Nama Pemimpin',
-            'title' => 'Direktur Operasional',
-            'bio'   => 'Bertanggung jawab atas operasional dan pengembangan layanan di kedua platform ekosistem.',
+            'name'  => 'Andika',
+            'title' => 'Direktur',
+            'photo' => 'andika.png',
         ],
         [
-            'name'  => 'Nama Pemimpin',
-            'title' => 'Manajer Platform Mutu PT',
-            'bio'   => 'Spesialis SPMI, AMI, dan tata kelola perguruan tinggi dengan pengalaman mendampingi 200+ PT.',
+            'name'  => 'Althaaf Muhammad',
+            'title' => 'Komisaris',
+            'photo' => 'althaf.png',
         ],
         [
-            'name'  => 'Nama Pemimpin',
-            'title' => 'Manajer Platform Labnesia',
-            'bio'   => 'Lead consultant akreditasi lab ISO/IEC 17025:2017 untuk sektor pendidikan, industri, dan pemerintah.',
+            'name'  => 'Bela Lestari Dwireja',
+            'title' => '',
+            'photo' => 'bela.png',
         ],
     ];
-}
-
-/**
- * Generate 2-letter initials from a name string.
- */
-function padma_get_initials( string $name ): string {
-    $parts = array_filter( explode( ' ', $name ) );
-    if ( count( $parts ) >= 2 ) {
-        return strtoupper( mb_substr( $parts[0], 0, 1 ) . mb_substr( end( $parts ), 0, 1 ) );
-    }
-    return strtoupper( mb_substr( $name, 0, 2 ) );
 }
 
 /**

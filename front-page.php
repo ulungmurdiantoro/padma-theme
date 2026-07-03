@@ -3,16 +3,18 @@
 
 <!-- ============================== HERO ============================== -->
 <section class="hero">
+  <div class="hero-orb hero-orb--plum" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb--brass" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="hero__inner reveal">
-      <span class="eyebrow">PT Padma Global Nusatama &middot; Ekosistem Mutu Nasional</span>
+    <div class="hero__inner">
+      <span class="eyebrow hero-eyebrow">PT Padma Global Nusatama &middot; Ekosistem Mutu Nasional</span>
       <h1>
-        Kami membangun<br>
-        ekosistem <em>mutu</em><br>
-        Indonesia.
+        <span class="hero-line">Kami membangun</span>
+        <span class="hero-line">ekosistem <em>mutu</em></span>
+        <span class="hero-line">Indonesia.</span>
       </h1>
-      <p class="hero__sub">Dari perguruan tinggi hingga laboratorium — kami hadir dengan pelatihan, pendampingan, dan sertifikasi kompetensi berstandar internasional.</p>
-      <div class="hero__cta">
+      <p class="hero__sub hero-sub">Dari perguruan tinggi hingga laboratorium — kami hadir dengan pelatihan, pendampingan, dan sertifikasi kompetensi berstandar internasional.</p>
+      <div class="hero__cta hero-cta">
         <a class="btn btn--ink btn--lg" href="<?php echo esc_url( home_url('/platform/') ); ?>">
           Lihat Platform
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -26,23 +28,23 @@
 <!-- ============================== STATS ROW ============================== -->
 <div class="stats-row">
   <div class="stats-row__item reveal">
-    <div class="stats-row__num">600<em>+</em></div>
+    <div class="stats-row__num" data-count-to="600"><span class="count-val">600</span><em>+</em></div>
     <div class="stats-row__label">Instansi &amp; perguruan tinggi dilayani</div>
   </div>
   <div class="stats-row__item reveal d1">
-    <div class="stats-row__num">4.500<em>+</em></div>
+    <div class="stats-row__num" data-count-to="4500"><span class="count-val">4.500</span><em>+</em></div>
     <div class="stats-row__label">Peserta &amp; sivitas akademika</div>
   </div>
   <div class="stats-row__item reveal d2">
-    <div class="stats-row__num">550<em>+</em></div>
+    <div class="stats-row__num" data-count-to="550"><span class="count-val">550</span><em>+</em></div>
     <div class="stats-row__label">SDM terlatih &amp; tersertifikasi</div>
   </div>
   <div class="stats-row__item reveal d3">
-    <div class="stats-row__num">30<em>+</em></div>
+    <div class="stats-row__num" data-count-to="30"><span class="count-val">30</span><em>+</em></div>
     <div class="stats-row__label">Laboratorium terakreditasi</div>
   </div>
   <div class="stats-row__item reveal d4">
-    <div class="stats-row__num">2017</div>
+    <div class="stats-row__num" data-count-to="2017"><span class="count-val">2017</span></div>
     <div class="stats-row__label">Berakar implementasi ISO</div>
   </div>
 </div>

@@ -71,30 +71,24 @@
 
     <div class="team-grid">
       <?php
-      $demo_leaders = padma_get_demo_leaders();
-      foreach ( $demo_leaders as $i => $leader ) :
+      $leaders  = padma_get_leaders();
+      $img_base = get_template_directory_uri() . '/assets/images/pimpinan/';
+      foreach ( $leaders as $i => $leader ) :
         $delay = $i % 4;
-        $initials = padma_get_initials( $leader['name'] );
       ?>
       <div class="team-card reveal<?php echo $delay ? ' d' . $delay : ''; ?>">
         <div class="team-card__photo">
-          <div class="team-card__avatar"><?php echo esc_html( $initials ); ?></div>
-          <div class="team-card__photo-label">Foto menyusul</div>
+          <img src="<?php echo esc_url( $img_base . $leader['photo'] ); ?>" alt="<?php echo esc_attr( $leader['name'] ); ?>" loading="lazy">
         </div>
         <div class="team-card__body">
           <div class="team-card__name"><?php echo esc_html( $leader['name'] ); ?></div>
-          <div class="team-card__title"><?php echo esc_html( $leader['title'] ); ?></div>
-          <?php if ( ! empty( $leader['bio'] ) ) : ?>
-            <div class="team-card__bio"><?php echo esc_html( $leader['bio'] ); ?></div>
+          <?php if ( ! empty( $leader['title'] ) ) : ?>
+            <div class="team-card__title"><?php echo esc_html( $leader['title'] ); ?></div>
           <?php endif; ?>
         </div>
       </div>
       <?php endforeach; ?>
     </div>
-
-    <p class="reveal" style="margin-top:28px;font-size:13px;color:var(--ink-3);font-family:var(--f-mono);letter-spacing:.05em">
-      &mdash; Foto dan detail tim akan diperbarui segera.
-    </p>
   </div>
 </section>
 
