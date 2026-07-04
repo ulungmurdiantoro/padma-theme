@@ -95,12 +95,21 @@ function padma_structured_data() {
         'description'    => 'Perusahaan pelatihan, pendampingan, dan sertifikasi kompetensi mutu yang menaungi dua platform: mutuperguruantinggi.id dan labnesia.id.',
         'foundingDate'   => '2017',
         'address'        => [
-            '@type'           => 'PostalAddress',
-            'streetAddress'   => 'Kompleks Ruko Teras Bali No. 12, Bubakan, Kec. Mijen',
-            'addressLocality' => 'Kota Semarang',
-            'addressRegion'   => 'Jawa Tengah',
-            'postalCode'      => '50216',
-            'addressCountry'  => 'ID',
+            [
+                '@type'           => 'PostalAddress',
+                'streetAddress'   => 'Komplek Perkantoran Lt. 3 UNISBANK, Jl. Tri Lomba Juang No. 1, Mugassari, Semarang Selatan',
+                'addressLocality' => 'Semarang',
+                'addressRegion'   => 'Jawa Tengah',
+                'postalCode'      => '50241',
+                'addressCountry'  => 'ID',
+            ],
+            [
+                '@type'           => 'PostalAddress',
+                'streetAddress'   => 'Perum The Paradise H-1, Jatirejo, Sendangadi, Kec. Mlati, Kab. Sleman',
+                'addressLocality' => 'Sleman',
+                'addressRegion'   => 'Daerah Istimewa Yogyakarta',
+                'addressCountry'  => 'ID',
+            ],
         ],
         'contactPoint'   => [
             [

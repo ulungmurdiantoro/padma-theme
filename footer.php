@@ -53,7 +53,8 @@
       <div>
         <h4>Kantor</h4>
         <ul>
-          <li><span style="color:var(--ink-2);font-size:13.5px;line-height:1.7">Kompleks Ruko Teras Bali No. 12, Bubakan, Kec. Mijen, Kota Semarang, Jawa Tengah 50216</span></li>
+          <li><span style="color:var(--ink-2);font-size:13.5px;line-height:1.7"><b style="color:#fff">Semarang</b><br>Komplek Perkantoran Lt. 3 UNISBANK, Jl. Tri Lomba Juang No. 1, Mugassari, Semarang Selatan, Jawa Tengah 50241</span></li>
+          <li><span style="color:var(--ink-2);font-size:13.5px;line-height:1.7"><b style="color:#fff">Yogyakarta</b><br>Perum The Paradise H-1, Jatirejo, Sendangadi, Kec. Mlati, Kab. Sleman, DI Yogyakarta</span></li>
           <li style="margin-top:12px"><a href="mailto:info@padmaglobal.co.id">info@padmaglobal.co.id</a></li>
           <li><a href="tel:+6281286563234">+62 812-8656-3234</a></li>
         </ul>

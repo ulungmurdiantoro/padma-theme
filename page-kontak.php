@@ -68,12 +68,16 @@
 
       <!-- INFO SIDE -->
       <div class="contact-info reveal d2">
-        <h3>Kantor Pusat</h3>
-        <p>Kompleks Ruko Teras Bali No. 12, Bubakan,<br>Kec. Mijen, Kota Semarang,<br>Jawa Tengah 50216</p>
+        <h3>Kantor Kami</h3>
+
+        <div class="hq-box" style="margin-bottom:14px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <div><b>Semarang</b><br>Komplek Perkantoran Lt. 3 UNISBANK, Jl. Tri Lomba Juang No. 1, Mugassari, Semarang Selatan, Semarang, Jawa Tengah 50241, Indonesia</div>
+        </div>
 
         <div class="hq-box" style="margin-bottom:24px">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11"/><circle cx="12" cy="10" r="2.6"/></svg>
-          <div><b>Lokasi</b><br>Kompleks Ruko Teras Bali No. 12, Bubakan, Kec. Mijen, Kota Semarang, Jawa Tengah 50216</div>
+          <div><b>Yogyakarta</b><br>Perum The Paradise H-1, Jatirejo, Desa/Kelurahan Sendangadi, Kec. Mlati, Kab. Sleman, Provinsi Daerah Istimewa Yogyakarta</div>
         </div>
 
         <div style="border:1px solid var(--line);border-radius:var(--rad);overflow:hidden;background:var(--bg-card)">
@@ -86,24 +90,6 @@
             </a>
           </div>
         </div>
-
-        <div style="margin-top:24px;padding:22px;border:1px solid var(--line);border-radius:var(--rad);background:var(--bg-card)">
-          <h4 style="font-family:var(--f-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin-bottom:16px;font-weight:500">Jam Operasional</h4>
-          <div style="display:grid;gap:8px;font-size:14px;color:var(--ink-2)">
-            <div style="display:flex;justify-content:space-between">
-              <span>Senin &ndash; Jumat</span>
-              <span style="color:#fff;font-weight:600">08.00 &ndash; 17.00 WIB</span>
-            </div>
-            <div style="display:flex;justify-content:space-between">
-              <span>Sabtu</span>
-              <span style="color:#fff;font-weight:600">08.00 &ndash; 13.00 WIB</span>
-            </div>
-            <div style="display:flex;justify-content:space-between">
-              <span>Minggu &amp; Libur Nasional</span>
-              <span style="color:var(--ink-3)">Tutup</span>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -114,11 +100,22 @@
 <div style="background:var(--bg-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0;text-align:center">
   <div class="wrap">
     <span class="clause" style="display:block;margin-bottom:14px">Lokasi Kami</span>
-    <p style="color:var(--ink-3);font-size:14px">Kompleks Ruko Teras Bali No. 12, Bubakan, Kec. Mijen, Kota Semarang</p>
-    <a class="btn btn--ghost" style="margin-top:18px;display:inline-flex" href="https://maps.google.com/?q=Kompleks+Ruko+Teras+Bali+No+12+Bubakan+Mijen+Semarang" target="_blank" rel="noopener">
-      Buka di Google Maps
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
-    </a>
+    <div style="display:grid;gap:28px;max-width:640px;margin-inline:auto">
+      <div>
+        <p style="color:var(--ink-3);font-size:14px"><b style="color:#fff">Semarang</b><br>Komplek Perkantoran Lt. 3 UNISBANK, Jl. Tri Lomba Juang No. 1, Mugassari, Semarang Selatan, Semarang, Jawa Tengah 50241</p>
+        <a class="btn btn--ghost" style="margin-top:14px;display:inline-flex" href="https://maps.google.com/?q=Komplek+Perkantoran+UNISBANK+Jl+Tri+Lomba+Juang+No+1+Mugassari+Semarang+Selatan" target="_blank" rel="noopener">
+          Buka di Google Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+      <div>
+        <p style="color:var(--ink-3);font-size:14px"><b style="color:#fff">Yogyakarta</b><br>Perum The Paradise H-1, Jatirejo, Sendangadi, Kec. Mlati, Kab. Sleman, DI Yogyakarta</p>
+        <a class="btn btn--ghost" style="margin-top:14px;display:inline-flex" href="https://maps.google.com/?q=Perum+The+Paradise+H-1+Jatirejo+Sendangadi+Mlati+Sleman+Yogyakarta" target="_blank" rel="noopener">
+          Buka di Google Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
