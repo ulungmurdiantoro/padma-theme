@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Preview Fix — Cursor, Orb, Globe</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="head">
+  <div class="wrap head__row">
+    <a class="brand" href="#"><span>Padma Global Nusatama<small>Preview</small></span></a>
+    <nav class="nav" id="nav" aria-label="Navigasi utama">
+      <a href="#" class="active">Beranda</a>
+      <a href="#">Platform</a>
+      <a class="btn btn--ink" href="#">Hubungi Kami
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="hero-orb hero-orb--plum" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb--brass" aria-hidden="true"></div>
+  <div class="hero-globe" aria-hidden="true">
+    <svg viewBox="0 0 400 400">
+      <g class="hero-globe__grid">
+        <circle cx="200" cy="200" r="180" />
+        <ellipse cx="200" cy="200" rx="180" ry="60" />
+        <ellipse cx="200" cy="200" rx="180" ry="120" />
+        <ellipse cx="200" cy="200" rx="60" ry="180" />
+        <ellipse cx="200" cy="200" rx="120" ry="180" />
+        <line x1="20" y1="200" x2="380" y2="200" />
+        <line x1="200" y1="20" x2="200" y2="380" />
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div class="hero__inner">
+      <span class="eyebrow hero-eyebrow">Preview &middot; Orb + Globe + Cursor</span>
+      <h1>
+        <span class="hero-line">Orb sekarang jelas</span>
+        <span class="hero-line">bergerak, globe grid</span>
+        <span class="hero-line">berputar perlahan.</span>
+      </h1>
+      <p class="hero__sub hero-sub">Gerakkan mouse — cursor default (panah) tetap terlihat seperti biasa, dot plum kecil mengikuti sebagai lapisan tambahan. Coba pindah ke tab lain lalu kembali — cursor tidak akan hilang.</p>
+      <div class="hero__cta hero-cta">
+        <a class="btn btn--ink btn--lg" href="#">Contoh Tombol
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div style="height:40vh"></div>
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -76,7 +76,6 @@
     ringEl.className = 'cursor__ring';
     cursorEl.appendChild(ringEl);
     document.body.appendChild(cursorEl);
-    document.body.classList.add('has-custom-cursor');
 
     var mouseX         = window.innerWidth / 2;
     var mouseY         = window.innerHeight / 2;

@@ -30,13 +30,13 @@ function padma_enqueue_scripts() {
         'padma-style',
         get_stylesheet_uri(),
         [ 'padma-fonts' ],
-        '3.9.0'
+        '4.3.0'
     );
     wp_enqueue_script(
         'padma-main',
         get_template_directory_uri() . '/assets/js/main.js',
         [],
-        '3.3.0',
+        '3.4.0',
         true
     );
 }
