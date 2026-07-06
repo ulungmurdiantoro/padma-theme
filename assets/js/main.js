@@ -121,6 +121,104 @@
     requestAnimationFrame(tickCursor);
   }
 
+  /* ── Hero globe (3D wireframe sphere, canvas) ── */
+  var globeCanvas = document.querySelector('.hero-globe__canvas');
+
+  if (globeCanvas && globeCanvas.getContext && !window.matchMedia('(max-width: 860px)').matches) {
+    var gCtx = globeCanvas.getContext('2d');
+    var gDpr = window.devicePixelRatio || 1;
+    var gSize = 0;
+
+    var resizeGlobe = function () {
+      gSize = globeCanvas.clientWidth;
+      globeCanvas.width  = gSize * gDpr;
+      globeCanvas.height = gSize * gDpr;
+      gCtx.setTransform(gDpr, 0, 0, gDpr, 0, 0);
+    };
+    resizeGlobe();
+    window.addEventListener('resize', resizeGlobe);
+
+    var GLOBE_LAT_LINES = 6;
+    var GLOBE_LON_LINES = 9;
+    var GLOBE_SEGMENTS  = 72;
+    var GLOBE_TILT      = -0.4;
+    var cosTilt = Math.cos(GLOBE_TILT);
+    var sinTilt = Math.sin(GLOBE_TILT);
+
+    var projectGlobePoint = function (x, y, z, theta) {
+      var cosT = Math.cos(theta), sinT = Math.sin(theta);
+      var x1 = x * cosT + z * sinT;
+      var z1 = -x * sinT + z * cosT;
+      var y1 = y * cosTilt - z1 * sinTilt;
+      var z2 = y * sinTilt + z1 * cosTilt;
+      return { x: x1, y: y1, z: z2 };
+    };
+
+    var strokeGlobeLine = function (pts) {
+      var k, a, b, t, alpha;
+      for (k = 1; k < pts.length; k++) {
+        a = pts[k - 1];
+        b = pts[k];
+        t = ((a.z + b.z) / 2 + 1) / 2;
+        alpha = .12 + .58 * t;
+        gCtx.strokeStyle = 'rgba(196,171,255,' + alpha.toFixed(3) + ')';
+        gCtx.beginPath();
+        gCtx.moveTo(a.x, a.y);
+        gCtx.lineTo(b.x, b.y);
+        gCtx.stroke();
+      }
+    };
+
+    var drawGlobe = function (theta) {
+      var r  = gSize / 2 * 0.86;
+      var cx = gSize / 2;
+      var cy = gSize / 2;
+      var i, j, u, v, pts, p, sinV, cosV, sinU, cosU;
+
+      gCtx.clearRect(0, 0, gSize, gSize);
+      gCtx.lineWidth = 1.1;
+
+      for (i = 0; i < GLOBE_LAT_LINES; i++) {
+        v = Math.PI * (i + 1) / (GLOBE_LAT_LINES + 1);
+        sinV = Math.sin(v);
+        cosV = Math.cos(v);
+        pts = [];
+        for (j = 0; j <= GLOBE_SEGMENTS; j++) {
+          u = (j / GLOBE_SEGMENTS) * Math.PI * 2;
+          p = projectGlobePoint(sinV * Math.cos(u), cosV, sinV * Math.sin(u), theta);
+          pts.push({ x: cx + p.x * r, y: cy - p.y * r, z: p.z });
+        }
+        strokeGlobeLine(pts);
+      }
+
+      for (i = 0; i < GLOBE_LON_LINES; i++) {
+        u = (Math.PI * 2 * i) / GLOBE_LON_LINES;
+        cosU = Math.cos(u);
+        sinU = Math.sin(u);
+        pts = [];
+        for (j = 0; j <= GLOBE_SEGMENTS; j++) {
+          v = (j / GLOBE_SEGMENTS) * Math.PI;
+          p = projectGlobePoint(Math.sin(v) * cosU, Math.cos(v), Math.sin(v) * sinU, theta);
+          pts.push({ x: cx + p.x * r, y: cy - p.y * r, z: p.z });
+        }
+        strokeGlobeLine(pts);
+      }
+    };
+
+    if (prefersReduced) {
+      drawGlobe(0);
+    } else {
+      var GLOBE_PERIOD = 55000;
+      var globeStart   = null;
+      var tickGlobe    = function (ts) {
+        if (globeStart === null) globeStart = ts;
+        drawGlobe(((ts - globeStart) / GLOBE_PERIOD) * Math.PI * 2);
+        requestAnimationFrame(tickGlobe);
+      };
+      requestAnimationFrame(tickGlobe);
+    }
+  }
+
   /* ── Scroll reveal ── */
   var revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 
