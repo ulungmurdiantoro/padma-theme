@@ -185,7 +185,7 @@
         <div>
           <div class="plat-home__code">Kompetensi &middot; Sertifikasi</div>
           <h3>expertia.id</h3>
-          <p>Platform sertifikasi kompetensi SDM yang mengakui keahlian secara formal sesuai KKNI dan standar internasional.</p>
+          <p>platform yang membantu para pakar mengubah keahlian, pengalaman, dan pemikirannya menjadi karya, pembelajaran, dan dampak nyata bagi masyarakat.</p>
         </div>
         <div class="plat-home__footer">
           <div class="plat-home__metrics">
