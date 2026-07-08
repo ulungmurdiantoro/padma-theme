@@ -188,12 +188,12 @@
           <p>platform yang membantu para pakar mengubah keahlian, pengalaman, dan pemikirannya menjadi karya, pembelajaran, dan dampak nyata bagi masyarakat.</p>
         </div>
         <div class="plat-home__footer">
-          <div class="plat-home__metrics">
+          <!-- <div class="plat-home__metrics">
             <div class="plat-home__metric">
               <b>KKNI</b>
               <span>Skema sertifikasi</span>
             </div>
-          </div>
+          </div> -->
           <a class="plat-home__link" href="https://expertia.id/" target="_blank" rel="noopener">
             Kunjungi
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17 17 7M9 7h8v8"/></svg>
